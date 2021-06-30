@@ -6,7 +6,7 @@
  */
 
 import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import { Box, Flex, Text } from "@chakra-ui/react"
 
@@ -28,13 +28,15 @@ const Bio = () => {
 
   return (
     <>
-      <Flex mt={10}>
+      <Flex mt={12}>
         <Box flexBasis="60px" flexShrink="0" mr={3}>
-          <StaticImage
-            style={{ borderRadius: "100%" }}
-            src="../images/barcelog-icon.png"
-            alt="Profile picture"
-          />
+          <Link to="/">
+            <StaticImage
+              style={{ borderRadius: "100%" }}
+              src="../images/barcelog-icon.png"
+              alt="Profile picture"
+            />
+          </Link>
         </Box>
         <Text>{description}</Text>
       </Flex>
