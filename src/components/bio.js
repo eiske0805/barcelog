@@ -8,50 +8,38 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import { Box, Flex, Text } from "@chakra-ui/react"
+
+import SnsNavi from "./snsNavi"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
       site {
         siteMetadata {
-          author {
-            name
-            summary
-          }
-          social {
-            twitter
-          }
+          description
         }
       }
     }
   `)
 
   // Set these values by editing "siteMetadata" in gatsby-config.js
-  const author = data.site.siteMetadata?.author
-  const social = data.site.siteMetadata?.social
+  const description = data.site.siteMetadata.description
 
   return (
-    <div className="bio">
-      <StaticImage
-        className="bio-avatar"
-        layout="fixed"
-        formats={["AUTO", "WEBP", "AVIF"]}
-        src="../images/profile-pic.png"
-        width={50}
-        height={50}
-        quality={95}
-        alt="Profile picture"
-      />
-      {author?.name && (
-        <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
-          {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
-          </a>
-        </p>
-      )}
-    </div>
+    <>
+      <Flex mt={10}>
+        <Box flexBasis="60px" flexShrink="0" mr={3}>
+          <StaticImage
+            style={{ borderRadius: "100%" }}
+            src="../images/barcelog-icon.png"
+            alt="Profile picture"
+          />
+        </Box>
+        <Text>{description}</Text>
+      </Flex>
+      <SnsNavi />
+    </>
   )
 }
 

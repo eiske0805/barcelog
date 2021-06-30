@@ -1,17 +1,20 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `BarceLOG`,
+    subtitle: `バルセロナ発のブログです`,
     author: {
       name: `Kyle Mathews`,
       summary: `who lives and works in San Francisco building useful things.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `バルセロナ在住の筆者が、カタルーニャについてアレコレ綴っているブログです。コンタクトはSNSまで。`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `barcelog2021`,
+      instagram: `barcelog2021`,
     },
   },
   plugins: [
+    `@chakra-ui/gatsby-plugin`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -118,7 +121,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/barcelog-icon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-react-helmet`,
