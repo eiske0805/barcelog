@@ -19,7 +19,7 @@ const Header = ({ isRootPath }) => {
   const tag = isRootPath ? "h1" : "h2"
 
   return (
-    <Box as="header">
+    <Box as="header" px={4}>
       <Heading as={tag} fontFamily="Kirang Haerang">
         <Link to="/">{title}</Link>
       </Heading>

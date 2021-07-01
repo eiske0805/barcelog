@@ -17,7 +17,7 @@ const Footer = () => {
   const title = data.site.siteMetadata.title
 
   return (
-    <Flex as="footer">
+    <Flex as="footer" px={4}>
       <Spacer />
       <Text fontFamily="Kirang Haerang">
         copyright {new Date().getFullYear()} {title}

@@ -4,13 +4,10 @@ const theme = extendTheme({
   colors: {
     black: "#373940",
     gray: "#6c757d",
-    blue: "#86A5DA",
-    lightBlue: "#80B9D7",
-    purple: "#E282CA",
-    green: "#7FDCB4",
     red: "#FFAB93",
   },
   fonts: {
+    heading: "Kiwi Maru, sans-serif",
     body: "Kiwi Maru, sans-serif",
   },
   styles: {
@@ -20,8 +17,15 @@ const theme = extendTheme({
         fontWeight: "light",
       },
       a: {
+        transition: ".2s",
         _hover: {
           color: "#fc6e78",
+        },
+      },
+      svg: {
+        transition: ".2s",
+        _hover: {
+          fill: "#fc6e78",
         },
       },
     },

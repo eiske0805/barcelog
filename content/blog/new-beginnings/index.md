@@ -1,5 +1,5 @@
 ---
-title: New Beginnings
+title: あい上おかきくけこサシ酢aabbbccddii
 date: "2015-05-28T22:40:32.169Z"
 description: This is a custom description for SEO and Open Graph purposes, rather than the default generated excerpt. Simply add a description field to the frontmatter.
 image: "./tori.jpg"
@@ -11,6 +11,16 @@ right at the coast of the Semantics, a large language ocean. A small river named
 Duden flows by their place and supplies it with the necessary regelialia.
 
 ## On deer horse aboard tritely yikes and much
+
+プロ野球 西武の平良海馬投手が、1 日夜行われたソフトバンク戦で 9 回の 1 イニングを無失点に抑え、プロ野球新記録となる 39 試合連続無失点を達成しました。
+
+平良投手は、先月 28 日の試合で 9 回の 1 イニングを無失点に抑えて、15 年前の平成 18 年に当時阪神の藤川球児さんがマークしたプロ野球記録に並ぶ、38 試合連続無失点を達成しました。
+
+そして 1 日夜、福岡市の PayPay ドームで行われたソフトバンク戦で、1 対 0 の 9 回に 2 人目のピッチャーとしてマウンドに上がりました。
+
+平良投手は、先頭バッターを空振り三振で打ち取ったあと、2 人目の柳田悠岐選手にヒットを打たれて、その後 2 アウト二塁となりましたが、後続を抑えて、プロ野球新記録となる 39 試合連続無失点を達成しました。
+
+平良投手は沖縄県出身の 21 歳。最速 160 キロのストレートとキレのある変化球を持ち味に、昨シーズンはリーグ 2 位の 33 ホールドをあげて新人王に輝きました。
 
 The Big Oxmox advised her not to do so, because there were thousands of bad
 Commas, wild Question Marks and devious Semikoli, but the Little Blind Text

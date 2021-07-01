@@ -6,7 +6,7 @@ module.exports = {
       name: `Kyle Mathews`,
       summary: `who lives and works in San Francisco building useful things.`,
     },
-    description: `バルセロナ在住の筆者が、カタルーニャについてアレコレ綴っているブログです。コンタクトはSNSまで。`,
+    description: `バルセロナ在住の筆者が、現地のことをアレコレ綴っているブログです。コンタクトはSNSまで。`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
       twitter: `barcelog2021`,
