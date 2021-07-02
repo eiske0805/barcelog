@@ -6,7 +6,7 @@ module.exports = {
       name: `Kyle Mathews`,
       summary: `who lives and works in San Francisco building useful things.`,
     },
-    description: `バルセロナ在住の筆者が、現地のことをアレコレ綴っているブログです。コンタクトはSNSまで。`,
+    description: `バルセロナ在住の筆者が、アレコレと現地のことを綴っているブログです。コンタクトはSNSまで。`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
       twitter: `barcelog2021`,
@@ -37,7 +37,9 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 630,
+              maxWidth: 992,
+              wrapperStyle:
+                "margin-left: 0!important; margin-right: 0!important;",
             },
           },
           {

@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
 import { List, ListItem, Box, Flex, Heading, Text } from "@chakra-ui/react"
 
 const BlogItems = ({ posts }) => {
@@ -9,75 +9,66 @@ const BlogItems = ({ posts }) => {
       {posts.map(post => {
         const title = post.frontmatter.title || post.fields.slug
         return (
-          <Link to={post.fields.slug}>
-            <ListItem
-              key={post.fields.slug}
-              mt={20}
-              p={4}
-              borderRadius="6px"
-              transition=".2s"
-              _hover={{
-                boxShadow: "2xl",
-                transform: "translateY(-3px)",
-              }}
-            >
-              <Box as="section">
-                <Heading
-                  as="h2"
-                  fontWeight="light"
-                  fontSize={{ base: "20px", md: "24px" }}
-                  mb={2}
+          <ListItem
+            key={post.fields.slug}
+            mt={20}
+            p={4}
+            borderRadius="6px"
+            transition=".3s"
+            _hover={{
+              boxShadow: "2xl",
+              transform: "translateY(-3px)",
+            }}
+          >
+            <Link to={post.fields.slug}>
+              <Heading
+                as="h2"
+                fontWeight="light"
+                fontSize={{ base: "20px", md: "24px" }}
+                mb={2}
+              >
+                {title}
+              </Heading>
+              <Text as="time" fontSize="xs">
+                {post.frontmatter.date}
+              </Text>
+              <Flex mt={2}>
+                <Box
+                  flexBasis={{ base: "80px", sm: "120px" }}
+                  flexShrink="0"
+                  mr={4}
                 >
-                  {title}
-                </Heading>
-                <Text as="time" fontSize="xs">
-                  {post.frontmatter.date}
-                </Text>
-                <Flex mt={2}>
-                  <Box
-                    flexBasis={{ base: "80px", sm: "120px" }}
-                    flexShrink="0"
-                    mr={4}
-                  >
+                  {post.frontmatter.image ? (
                     <GatsbyImage
                       image={getImage(post.frontmatter.image)}
                       style={{ borderRadius: "5px" }}
-                      alt="abc"
+                      alt={title}
                     />
-                  </Box>
-                  <Flex direction="column">
-                    <Text
-                      fontSize={{ base: "14px", sm: "16px" }}
-                      dangerouslySetInnerHTML={{
-                        __html: post.excerpt,
-                      }}
+                  ) : (
+                    <StaticImage
+                      style={{ borderRadius: "5px" }}
+                      src="../images/barcelog-icon.png"
+                      alt={title}
                     />
-                    <Text
-                      mt={{ base: 0, sm: 2, md: 4 }}
-                      textAlign={{ base: "right", md: "left" }}
-                    >
-                      続きを読む
-                    </Text>
-                  </Flex>
+                  )}
+                </Box>
+                <Flex direction="column">
+                  <Text
+                    fontSize={{ base: "14px", sm: "16px" }}
+                    dangerouslySetInnerHTML={{
+                      __html: post.excerpt,
+                    }}
+                  />
+                  <Text
+                    mt={{ base: 0, sm: 2, md: 4 }}
+                    textAlign={{ base: "right", md: "left" }}
+                  >
+                    続きを読む
+                  </Text>
                 </Flex>
-                {/* <Flex mt={{ base: 1, sm: 0 }}>
-                  <Spacer />
-                  <Link to={post.fields.slug}>
-                    <Button
-                      _focus={{ boxShadow: "none" }}
-                      fontSize="sm"
-                      size="sm"
-                      variant="outline"
-                      color="gray"
-                      _hover={{ color: "red" }}
-                    >
-                      読む
-                    </Button>
-                  </Link>
-                </Flex> */}
-              </Box>
-            </ListItem>
-          </Link>
+              </Flex>
+            </Link>
+          </ListItem>
         )
       })}
     </List>

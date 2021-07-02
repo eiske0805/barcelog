@@ -16,18 +16,6 @@ const theme = extendTheme({
         color: "#373940",
         fontWeight: "light",
       },
-      a: {
-        transition: ".2s",
-        _hover: {
-          color: "#fc6e78",
-        },
-      },
-      svg: {
-        transition: ".2s",
-        _hover: {
-          fill: "#fc6e78",
-        },
-      },
     },
   },
 })

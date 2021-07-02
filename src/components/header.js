@@ -1,6 +1,6 @@
 import * as React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
-import { Box, Heading } from "@chakra-ui/react"
+import { useStaticQuery, graphql, Link as GatsbyLink } from "gatsby"
+import { Box, Heading, Link } from "@chakra-ui/react"
 import "@fontsource/kirang-haerang"
 
 const Header = ({ isRootPath }) => {
@@ -16,12 +16,22 @@ const Header = ({ isRootPath }) => {
 
   const title = data.site.siteMetadata.title
 
-  const tag = isRootPath ? "h1" : "h2"
+  const tag = isRootPath ? "h1" : "h3"
 
   return (
     <Box as="header" px={4}>
-      <Heading as={tag} fontFamily="Kirang Haerang">
-        <Link to="/">{title}</Link>
+      <Heading as={tag} fontFamily="Kirang Haerang" color="black">
+        <Link
+          as={GatsbyLink}
+          to="/"
+          transition=".3s"
+          _hover={{
+            color: "red",
+          }}
+          _focus={{ boxShadow: "none" }}
+        >
+          {title}
+        </Link>
       </Heading>
     </Box>
   )
