@@ -19,6 +19,17 @@ const blogpostTheme = extendTheme({
       p: {
         my: 4,
       },
+      a: {
+        color: "gray",
+        fill: "gray",
+        transition: ".3s",
+        _hover: {
+          color: "red",
+        },
+        _focus: {
+          boxShadow: "none",
+        },
+      },
     },
   },
 })

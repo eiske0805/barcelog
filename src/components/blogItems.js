@@ -62,6 +62,7 @@ const BlogItems = ({ posts }) => {
                   <Text
                     mt={{ base: 0, sm: 2, md: 4 }}
                     textAlign={{ base: "right", md: "left" }}
+                    color="gray"
                   >
                     続きを読む
                   </Text>
