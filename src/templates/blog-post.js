@@ -1,5 +1,6 @@
 import * as React from "react"
 import { graphql } from "gatsby"
+import { getImage } from "gatsby-plugin-image"
 import {
   ChakraProvider,
   Box,
@@ -17,6 +18,8 @@ import PageNavi from "../components/pageNavi"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
+  // const image = getImage(post.frontmatter.image)
+  // console.log(image)
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
 
@@ -26,6 +29,7 @@ const BlogPostTemplate = ({ data, location }) => {
         <Seo
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
+          image={getImage(post.frontmatter.image)}
         />
         <SnsNavi />
         <Box as="article" p={4}>
@@ -67,6 +71,15 @@ export const pageQuery = graphql`
         title
         date(formatString: "YYYY - MM - DD")
         description
+        image {
+          childImageSharp {
+            gatsbyImageData(
+              width: 600
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+            )
+          }
+        }
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {

@@ -113,11 +113,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `BarceLOG`,
+        short_name: `BarceLOG`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#373940`,
         display: `minimal-ui`,
         icon: `src/images/barcelog-icon.png`, // This path is relative to the root of the site.
       },
