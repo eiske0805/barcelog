@@ -5,13 +5,13 @@ import { List, ListItem, Box, Flex, Heading, Text } from "@chakra-ui/react"
 
 const BlogItems = ({ posts }) => {
   return (
-    <List my={16} ml={0}>
+    <List mb={16}>
       {posts.map(post => {
         const title = post.frontmatter.title || post.fields.slug
         return (
           <ListItem
             key={post.fields.slug}
-            mt={20}
+            mt={12}
             p={4}
             borderRadius="6px"
             transition=".3s"
@@ -62,7 +62,6 @@ const BlogItems = ({ posts }) => {
                   <Text
                     mt={{ base: 0, sm: 2, md: 4 }}
                     textAlign={{ base: "right", md: "left" }}
-                    color="gray"
                   >
                     続きを読む
                   </Text>

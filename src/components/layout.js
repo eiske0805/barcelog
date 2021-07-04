@@ -9,7 +9,6 @@ const Layout = ({ location, children }) => {
   const isRootPath = location.pathname === rootPath
 
   return (
-    // <Box maxW="62em" mx="auto" py={12} px={4}>
     <Box maxW="62em" mx="auto" py={12}>
       <Header isRootPath={isRootPath} />
       <Box as="main">{children}</Box>

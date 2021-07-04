@@ -6,7 +6,8 @@ const PageNavi = ({ previous, next }) => {
   return (
     <Flex
       as="nav"
-      mt={4}
+      mt={20}
+      mb={12}
       px={4}
       pb={16}
       borderBottom="1px dashed"

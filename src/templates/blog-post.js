@@ -10,7 +10,7 @@ import {
 } from "@chakra-ui/react"
 
 import blogpostTheme from "../theme/blogpostTheme"
-import Bio from "../components/bio"
+import SnsNavi from "../components/snsNavi"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import PageNavi from "../components/pageNavi"
@@ -27,6 +27,7 @@ const BlogPostTemplate = ({ data, location }) => {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
+        <SnsNavi />
         <Box as="article" p={4}>
           <Heading as="h1" mt={12} mb={2}>
             {post.frontmatter.title}
@@ -40,7 +41,6 @@ const BlogPostTemplate = ({ data, location }) => {
           <Box mt={4} dangerouslySetInnerHTML={{ __html: post.html }} />
         </Box>
         <PageNavi previous={previous} next={next} />
-        <Bio />
       </Layout>
     </ChakraProvider>
   )

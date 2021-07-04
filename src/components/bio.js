@@ -28,7 +28,7 @@ const Bio = () => {
 
   return (
     <>
-      <Flex mt={12} px={4}>
+      <Flex p={4}>
         <Box flexBasis="60px" flexShrink="0" mr={3}>
           <Link to="/">
             <StaticImage
@@ -38,7 +38,9 @@ const Bio = () => {
             />
           </Link>
         </Box>
-        <Text fontSize={{ base: "14px", sm: "16px" }}>{description}</Text>
+        <Text
+          fontSize={{ base: "14px", sm: "16px" }}
+        >{`${description}コンタクトはSNSまで。`}</Text>
       </Flex>
       <SnsNavi />
     </>

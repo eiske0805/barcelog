@@ -2,12 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `BarceLOG`,
     subtitle: `バルセロナ発のブログです`,
-    author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
-    },
-    description: `バルセロナ在住の筆者が、アレコレと現地のことを綴っているブログです。コンタクトはSNSまで。`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `バルセロナ在住の筆者が、アレコレと現地のことを綴っているブログです。`,
+    siteUrl: `https://barcelog.net/`,
     social: {
       twitter: `barcelog2021`,
       instagram: `barcelog2021`,
