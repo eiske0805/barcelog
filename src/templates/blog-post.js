@@ -29,7 +29,6 @@ const BlogPostTemplate = ({ data, location }) => {
           description={post.frontmatter.description || post.excerpt}
           excerpt={post.excerpt || post.frontmatter.description}
           image={getImage(post.frontmatter.image)}
-          location={location}
         />
         <SnsNavi />
         <Box as="article" p={4}>

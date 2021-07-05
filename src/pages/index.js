@@ -31,7 +31,7 @@ const BlogIndex = ({ data, location }) => {
   return (
     <ChakraProvider theme={theme}>
       <Layout location={location} title={siteTitle}>
-        <Seo image={iconImage} location={location} title="All posts" />
+        <Seo image={iconImage} title="All posts" />
         <Bio />
         <BlogItems posts={posts} />
       </Layout>
