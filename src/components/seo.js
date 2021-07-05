@@ -11,7 +11,7 @@ import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
 const Seo = ({ description, lang, meta, title, image, excerpt }) => {
-  const { site } = useStaticQuery(
+  const { site, file } = useStaticQuery(
     graphql`
       query {
         site {
@@ -24,18 +24,24 @@ const Seo = ({ description, lang, meta, title, image, excerpt }) => {
             }
           }
         }
+        file(relativePath: { eq: "barcelog-icon.png" }) {
+          childImageSharp {
+            fixed {
+              src
+            }
+          }
+        }
       }
     `
   )
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
-  const ogpImage =
-    typeof image === "string"
-      ? `${site.siteMetadata.siteUrl}${image}`
-      : `${site.siteMetadata.siteUrl}${image.images?.fallback.src}`
+  const ogpImage = image
+    ? `${site.siteMetadata.siteUrl}${image?.images?.fallback.src}`
+    : `${site.siteMetadata.siteUrl}${file.childImageSharp.fixed.src}`
 
-  console.log(image)
+  console.log(ogpImage)
 
   return (
     <Helmet

@@ -12,7 +12,6 @@ import BlogItems from "../components/blogItems"
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
-  const iconImage = data.file.childImageSharp.fixed.src
 
   if (posts.length === 0) {
     return (
@@ -31,7 +30,7 @@ const BlogIndex = ({ data, location }) => {
   return (
     <ChakraProvider theme={theme}>
       <Layout location={location} title={siteTitle}>
-        <Seo image={iconImage} title="All posts" />
+        <Seo title="All posts" />
         <Bio />
         <BlogItems posts={posts} />
       </Layout>
@@ -67,13 +66,6 @@ export const pageQuery = graphql`
               )
             }
           }
-        }
-      }
-    }
-    file(relativePath: { eq: "barcelog-icon.png" }) {
-      childImageSharp {
-        fixed {
-          src
         }
       }
     }
