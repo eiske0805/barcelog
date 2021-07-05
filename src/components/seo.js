@@ -41,8 +41,6 @@ const Seo = ({ description, lang, meta, title, image, excerpt }) => {
     ? `${site.siteMetadata.siteUrl}${image?.images?.fallback.src}`
     : `${site.siteMetadata.siteUrl}${file.childImageSharp.fixed.src}`
 
-  console.log(ogpImage)
-
   return (
     <Helmet
       htmlAttributes={{
@@ -51,6 +49,10 @@ const Seo = ({ description, lang, meta, title, image, excerpt }) => {
       title={title}
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       meta={[
+        {
+          name: `google-site-verification`,
+          content: `DBSYEV5pINWacaiDD4GxyQ9v71eiZuVDJ_EaOR62b70`,
+        },
         {
           name: `description`,
           content: metaDescription,
