@@ -18,8 +18,6 @@ import PageNavi from "../components/pageNavi"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
-  // const image = getImage(post.frontmatter.image)
-  // console.log(image)
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
 
@@ -29,7 +27,9 @@ const BlogPostTemplate = ({ data, location }) => {
         <Seo
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
+          excerpt={post.excerpt || post.frontmatter.description}
           image={getImage(post.frontmatter.image)}
+          location={location}
         />
         <SnsNavi />
         <Box as="article" p={4}>
