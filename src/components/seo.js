@@ -33,7 +33,9 @@ const Seo = ({ description, lang, meta, title, image, excerpt }) => {
   const ogpImage =
     typeof image === "string"
       ? `${site.siteMetadata.siteUrl}${image}`
-      : `${site.siteMetadata.siteUrl}${image.images.fallback.src}`
+      : `${site.siteMetadata.siteUrl}${image.images?.fallback.src}`
+
+  console.log(image)
 
   return (
     <Helmet
