@@ -8,20 +8,21 @@ const blogpostTheme = extendTheme({
       body: {
         color: "#373940",
         fontWeight: "light",
+        lineHeight: "taller",
+        letterSpacing: "widest",
       },
       h1: {
         color: "#373940",
       },
       h2: {
         color: "#373940",
-        mt: 20,
+        mt: 28,
       },
       p: {
-        my: 4,
+        my: 8,
       },
       a: {
         color: "gray",
-        fill: "gray",
         transition: ".3s",
         _hover: {
           color: "red",
