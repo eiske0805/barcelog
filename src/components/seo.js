@@ -50,10 +50,6 @@ const Seo = ({ description, lang, meta, title, image, excerpt }) => {
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       meta={[
         {
-          name: `google-site-verification`,
-          content: `DBSYEV5pINWacaiDD4GxyQ9v71eiZuVDJ_EaOR62b70`,
-        },
-        {
           name: `description`,
           content: metaDescription,
         },
