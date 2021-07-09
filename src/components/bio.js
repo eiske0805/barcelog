@@ -7,10 +7,10 @@
 
 import * as React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-import { Box, Flex, Text } from "@chakra-ui/react"
+import { Box, Text, HStack } from "@chakra-ui/react"
 
 import SnsNavi from "./snsNavi"
+import Logo from "./logo"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -28,20 +28,16 @@ const Bio = () => {
 
   return (
     <>
-      <Flex p={4}>
+      <HStack pt={4} px={4}>
         <Box flexBasis="60px" flexShrink="0" mr={3}>
           <Link to="/">
-            <StaticImage
-              style={{ borderRadius: "100%" }}
-              src="../images/barcelog-icon.png"
-              alt="Profile picture"
-            />
+            <Logo width="60px" height="60px" />
           </Link>
         </Box>
         <Text
           fontSize={{ base: "14px", sm: "16px" }}
         >{`${description}コンタクトはSNSまで。`}</Text>
-      </Flex>
+      </HStack>
       <SnsNavi />
     </>
   )

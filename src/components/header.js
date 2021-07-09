@@ -20,19 +20,20 @@ const Header = ({ isRootPath }) => {
 
   return (
     <Box as="header" px={4}>
-      <Heading as={tag} fontFamily="Kirang Haerang" color="black">
-        <Link
-          as={GatsbyLink}
-          to="/"
-          transition=".3s"
-          _hover={{
-            color: "red",
-          }}
-          _focus={{ boxShadow: "none" }}
-        >
+      <Link
+        as={GatsbyLink}
+        to="/"
+        color="black"
+        transition=".3s"
+        _hover={{
+          color: "red",
+        }}
+        _focus={{ boxShadow: "none" }}
+      >
+        <Heading as={tag} fontFamily="Kirang Haerang">
           {title}
-        </Link>
-      </Heading>
+        </Heading>
+      </Link>
     </Box>
   )
 }
