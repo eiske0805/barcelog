@@ -1,7 +1,9 @@
 import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import { Flex, Text, Spacer } from "@chakra-ui/react"
+import { useStaticQuery, graphql, Link } from "gatsby"
+import { Flex, Text, Spacer, HStack } from "@chakra-ui/react"
 import "@fontsource/kirang-haerang"
+
+import Logo from "./logo"
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
@@ -17,11 +19,16 @@ const Footer = () => {
   const title = data.site.siteMetadata.title
 
   return (
-    <Flex as="footer" px={4}>
+    <Flex as="footer" pt={12} px={4}>
       <Spacer />
-      <Text fontFamily="Kirang Haerang">
-        copyright {new Date().getFullYear()} {title}
-      </Text>
+      <HStack>
+        <Link to="/">
+          <Logo width="40px" height="40px" />
+        </Link>
+        <Text fontFamily="Kirang Haerang">
+          copyright {new Date().getFullYear()} {title}
+        </Text>
+      </HStack>
     </Flex>
   )
 }

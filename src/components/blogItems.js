@@ -11,7 +11,7 @@ const BlogItems = ({ posts }) => {
         return (
           <ListItem
             key={post.fields.slug}
-            mt={12}
+            mt={24}
             p={4}
             borderRadius="6px"
             transition=".3s"

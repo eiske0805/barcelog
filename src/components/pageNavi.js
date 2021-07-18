@@ -7,7 +7,6 @@ const PageNavi = ({ previous, next }) => {
     <Flex
       as="nav"
       mt={20}
-      mb={12}
       px={4}
       pb={16}
       borderBottom="1px dashed"
