@@ -26,7 +26,10 @@ image: "./messi.jpg"
 <br>
 
 2019-2020 シーズンの各チームの LCPD です。<br>
-![full view](./lcpd.jpeg)
+![full view](./lcpd19-20.jpeg)
+
+2020-2021 シーズンの各チームの LCPD です。<br>
+![full view](./lcpd20-21.jpeg)
 <font color="gray"><a href="https://www.laliga.com/transparencia/gestion-economica/limite-coste-plantilla" target="_blank"　rel="noopener noreferrer">引用元:LaLiga 公式サイト</a></font>
 <br>
 <br>
@@ -35,7 +38,6 @@ image: "./messi.jpg"
 
 また、<a href="https://as.com/futbol/2021/08/06/primera/1628201317_861623.html" target="_blank"　rel="noopener noreferrer">この記事</a>には、他の選手の給料(税込)も書かれています。見た感想として、「やっぱり攻撃の選手がたくさんもらうんだな」「選手間にそこまで大きな給料差はないんだな」「グリーズマンとコウチーニョとリキプッチは貰いすぎじゃないか」と思いました。そして、我ら同胞に非礼の限りを尽くしたデンベレとそれを笑顔で見守っていたグリーズマンを追い出して、浮いたお金でメッシと契約してほしかったなとも思いました。（あの２人が出る試合は、おそらく楽しんで見れないと思うんですよね...）
 
-<br>
 <br>
 
 ## **どうしてバルサはコロナ禍のダメージが大きい？**
@@ -56,6 +58,8 @@ image: "./messi.jpg"
 この記事を書いている 8/8(日) には、毎年恒例のプレシーズンマッチ Joan Gamper 杯が、カンプノウにて 20,000 人の観客（キャパの 20%）を入れて行われます。この試合は、キャプテンが新シーズンの抱負をスタンドのクレに向かって語るのが通例ですが、メッシのそれを見れなくなるとは、ほんの数日前まで、ほとんどのクレが想像しなかったことでしょう。
 
 ![full view](./gamper.jpg)
+
+<br>
 
 ![full view](./gamper02.jpg)
 <font color="gray">ちょうど 10 年前の Joan Gamper 杯です。懐かしい顔が揃っています。（画質悪くてすいません。）</font>
