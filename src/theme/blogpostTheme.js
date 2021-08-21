@@ -22,10 +22,10 @@ const blogpostTheme = extendTheme({
         my: 8,
       },
       a: {
-        color: "gray",
+        color: "#99A6B0",
         transition: ".3s",
         _hover: {
-          color: "red",
+          color: "#FFAB93",
         },
         _focus: {
           boxShadow: "none",

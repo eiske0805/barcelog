@@ -8,7 +8,6 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import BlogItems from "../components/blogItems"
-import Search from "../components/search"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -33,7 +32,6 @@ const BlogIndex = ({ data, location }) => {
       <Layout location={location} title={siteTitle}>
         <Seo title="全ての記事" />
         <Bio />
-        <Search />
         <BlogItems posts={posts} />
       </Layout>
     </ChakraProvider>
