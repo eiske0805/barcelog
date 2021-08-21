@@ -39,7 +39,7 @@ image: "./messi.jpg"
 
 また、<a href="https://as.com/futbol/2021/08/06/primera/1628201317_861623.html" target="_blank"　rel="noopener noreferrer">同記事</a>には、他の選手の給料(税込)も書かれているので、以下に引用します。<br>
 
-![full view](./aa.png)
+![full view](./saralir.png)
 <font color="gray"><a href="https://www.laliga.com/transparencia/gestion-economica/limite-coste-plantilla" target="_blank"　rel="noopener noreferrer">引用元:As 紙「Los salarios de la plantilla del Barcelona: ¿quién es el mejor pagado tras la salida de Messi?（2021 年 8 月 6 日）」</a></font>
 <br>
 <br>
