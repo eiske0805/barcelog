@@ -41,12 +41,12 @@ const BlogItems = ({ posts }) => {
                   {post.frontmatter.image ? (
                     <GatsbyImage
                       image={getImage(post.frontmatter.image)}
-                      style={{ borderRadius: "5px" }}
+                      imgStyle={{ borderRadius: "5px" }}
                       alt={title}
                     />
                   ) : (
                     <StaticImage
-                      style={{ borderRadius: "5px" }}
+                      imgStyle={{ borderRadius: "5px" }}
                       src="../images/barcelog-icon.png"
                       alt={title}
                     />
@@ -62,6 +62,7 @@ const BlogItems = ({ posts }) => {
                   <Text
                     mt={{ base: 0, sm: 2, md: 4 }}
                     textAlign={{ base: "right", md: "left" }}
+                    as="i"
                   >
                     続きを読む
                   </Text>

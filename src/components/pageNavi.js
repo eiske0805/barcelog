@@ -18,6 +18,7 @@ const PageNavi = ({ previous, next }) => {
             as={Link}
             to={next.fields.slug}
             rel="next"
+            fill="gray"
             transition=".3s"
             _hover={{
               color: "red",
@@ -42,13 +43,14 @@ const PageNavi = ({ previous, next }) => {
           </HStack>
         )}
       </Box>
-      <Spacer />
+      <Spacer minW="20%" />
       <Box>
         {previous && (
           <HStack
             as={Link}
             to={previous.fields.slug}
             rel="prev"
+            fill="gray"
             transition=".3s"
             _hover={{
               color: "red",
