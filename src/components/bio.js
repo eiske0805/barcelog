@@ -36,7 +36,7 @@ const Bio = () => {
         </Box>
         <Text
           fontSize={{ base: "14px", sm: "16px" }}
-        >{`${description}コンタクトはSNSまで。`}</Text>
+        >{`${description}コンタクトはSNSのDMでお願いします。`}</Text>
       </HStack>
       <SnsNavi />
     </>
