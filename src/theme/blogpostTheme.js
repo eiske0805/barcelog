@@ -31,6 +31,18 @@ const blogpostTheme = extendTheme({
           boxShadow: "none",
         },
       },
+      th: {
+        p: { base: 2, md: 4 },
+        fontSize: { base: "xs", md: "md" },
+      },
+      td: {
+        p: { base: 2, md: 4 },
+        fontSize: { base: "xs", md: "md" },
+      },
+      figcaption: {
+        fontSize: { base: "xs", md: "sm" },
+        color: "#99A6B0",
+      },
     },
   },
 })

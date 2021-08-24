@@ -71,7 +71,7 @@ const Seo = ({ description, lang, meta, title, image, excerpt }) => {
         },
         {
           name: `twitter:card`,
-          content: `summary_large_image`,
+          content: `summary`,
         },
         {
           name: `twitter:creator`,
