@@ -24,7 +24,7 @@ const BlogItems = ({ posts }) => {
               <Heading
                 as="h2"
                 fontWeight="light"
-                fontSize={{ base: "20px", md: "24px" }}
+                fontSize={{ base: "lg", md: "xl" }}
                 mb={2}
               >
                 {title}
@@ -54,7 +54,7 @@ const BlogItems = ({ posts }) => {
                 </Box>
                 <Flex direction="column">
                   <Text
-                    fontSize={{ base: "14px", sm: "16px" }}
+                    fontSize={{ base: "0.85rem", sm: "0.92rem" }}
                     dangerouslySetInnerHTML={{
                       __html: post.excerpt,
                     }}
@@ -62,7 +62,7 @@ const BlogItems = ({ posts }) => {
                   <Text
                     mt={{ base: 0, sm: 2, md: 4 }}
                     textAlign={{ base: "right", md: "left" }}
-                    fontSize={{ base: "14px", sm: "16px" }}
+                    fontSize={{ base: "0.85rem", sm: "0.92rem" }}
                     as="i"
                   >
                     続きを読む

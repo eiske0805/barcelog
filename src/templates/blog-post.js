@@ -32,7 +32,7 @@ const BlogPostTemplate = ({ data, location }) => {
         />
         <SnsNavi />
         <Box as="article" p={4}>
-          <Heading as="h1" mt={12} mb={2}>
+          <Heading as="h1" mt={12} mb={2} fontSize={{ base: "lg", sm: "xl" }}>
             {post.frontmatter.title}
           </Heading>
           <Flex>
@@ -41,7 +41,11 @@ const BlogPostTemplate = ({ data, location }) => {
               {post.frontmatter.date}
             </Text>
           </Flex>
-          <Box mt={4} dangerouslySetInnerHTML={{ __html: post.html }} />
+          <Box
+            mt={4}
+            fontSize={{ base: "0.92rem", md: "md" }}
+            dangerouslySetInnerHTML={{ __html: post.html }}
+          />
         </Box>
         <PageNavi previous={previous} next={next} />
       </Layout>
