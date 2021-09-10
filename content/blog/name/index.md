@@ -134,7 +134,7 @@ image: "./name.jpg"
 <table>
 <tr><th bgcolor=#D55558><font color="#fff">apodo(あだ名・愛称)<th bgcolor=#D55558><font color="#fff">名前 
 <tr><td bgcolor=#FB888B><font color="#fff">Pep(ペップ)　 <td bgcolor=#FB888B><font color="#fff">Josep(ジュゼップ)
-<tr><td bgcolor=#FB888B><font color="#fff">Pepe(ぺぺ)　 <td bgcolor=#FB888B><font color="#fff">José(ホセ)
+<tr><td bgcolor=#D55558><font color="#fff">Pepe(ぺぺ)　 <td bgcolor=#D55558><font color="#fff">José(ホセ)
 <tr><td bgcolor=#FB888B><font color="#FFEB20">Pepa(ペパ)　 <td bgcolor=#FB888B><font color="#FFEB20">Josepa(ジュゼパ)
 <tr><td bgcolor=#D55558><font color="#FFEB20">Pepa(ペパ)　 <td bgcolor=#D55558><font color="#FFEB20">Josefa(ホセファ)
 <tr><td bgcolor=#D55558><font color="#FFEB20">Lola(ロラ)　 <td bgcolor=#D55558><font color="#FFEB20">Dolores(ドロレス)
@@ -151,7 +151,7 @@ image: "./name.jpg"
 <tr><td bgcolor=#D55558><font color="#fff">Paco(パコ)<br>Pancho(パンチョ)　 <td bgcolor=#D55558><font color="#fff">Francisco(フランシスコ)
 <tr><td bgcolor=#FB888B><font color="#FFEB20">Laia(ライア) <td bgcolor=#FB888B><font color="#FFEB20">Eularia(アウラリア)
 </table>
-<font color="#D55558">※濃いピンクはカタルーニャ語、薄いピンクはスペイン語です。白は男性の名前で、黄色は女性の名前です。</font>
+<font color="#D55558">※薄いピンクはカタルーニャ語、濃いピンクはスペイン語です。白は男性の名前で、黄色は女性の名前です。</font>
 
 上の表は、apodo の一例です。レアルマドリーの「ナチョ」、ビジャレアルの「パコ・アルカセル」、先日セビージャに移籍した「ラファ・ミル」、元リバプールの GK の「ぺぺ・レイナ」などは、登録名に apodo が使われています。
 
